@@ -32,9 +32,5 @@ class EntityMethodTests(TestCase):
         self.assertIn('Hello {}'.format(entity.name), out.getvalue())
 
     def test_command_output_does_not_exist(self):
-        old_stderr = sys.stderr
-        sys.stderr = StringIO()
         with self.assertRaises(CommandError):
             call_command('hello_entity', 123456)
-
-        sys.stderr = old_stderr
