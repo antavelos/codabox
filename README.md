@@ -33,7 +33,6 @@ Now the server should be up and running. You can stop it by calling `make stop`.
 4. You can also say hello via the command line by running `make hello id=[id]`.
 
 ### Stack
-
 Python 3.5
 
 PostgreSQL 9.6.1
@@ -42,3 +41,5 @@ Django 1.10.5
 
 gunicorn 19.6.0
 
+### Environment
+The project was tested under Ubuntu 16.10
