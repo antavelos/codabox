@@ -9,7 +9,5 @@ services:
       - .:/code
     ports:
       - "80:8000"
-    expose:
-      - "8000"
     depends_on:
       - db
