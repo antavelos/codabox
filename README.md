@@ -9,7 +9,8 @@ This exercise demonstrates a simple Django app running in Docker. Moreover a sim
 ## Makefile
 The Makefile provides the following commands:
 * **`make build`:** It builds the docker containers. Alias of `docker-compose build`.
-* **`make up`:** It runs the docker containers. Alias of `docker-compose up`.
+* **`make up`:** It runs the docker containers. Alias of `docker-compose up -d`.
+* **`make stop`:** It stops the docker containers. Alias of `docker-compose stop`.
 * **`make superuser`:** It craetes a django super user. Alias of `docker-compose run web python manage.py createsuperuser`.
 * **`make migrate`:** It applies the django app migrations. Alias of `docker-compose run web python manage.py createsuperuser`.
 * **`make shell`:** It runs the django app shell. Alias of `docker-compose run web python manage.py shell`.
@@ -23,7 +24,7 @@ Upon cloning the repository localy follow the below steps in order to set the ap
 2. `make build`
 3. `make up`
 
-Now the server should be up and running
+Now the server should be up and running. You can stop it by calling `make stop`.
 
 ## Usage
 1. In another terminal run `make superuser` in order to create an admin for accesing the admin page

@@ -2,7 +2,10 @@ build:
 	docker-compose build
 
 up:
-	docker-compose up
+	docker-compose up -d
+
+stop:
+	docker-compose stop
 
 superuser:
 	docker-compose run web python manage.py createsuperuser
