@@ -42,4 +42,4 @@ Django 1.10.5
 gunicorn 19.6.0
 
 ### Environment
-The project was tested under Ubuntu 16.10
+The project was tested under `Ubuntu 16.10` with `docker 1.13.0` and `docker-compose 1.10.0`
