@@ -1,5 +1,5 @@
 # Codabox pre-interview exercise
-This exercise demonstrates a simple Django app running in Docker. Moreover a simple Makefile is provided assembling some basic docker and django commands under a common cli which can be used for setting up the environment and the project.
+This exercise demonstrates a simple Django app running in Docker. Moreover a simple Makefile is provided assembling some basic docker and django commands under a common cli which can be used for setting up the environment and the app as well as interacting with it.
 
 ## Specs
 * It should expose a web page that display a "Hello [name]" message at the following URL: http://codabox-interview.dev/hello-world/[id] . The [id] should represent a database object containing the [name] part of the "Hello [name]" message.
