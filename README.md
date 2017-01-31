@@ -12,7 +12,8 @@ The Makefile provides the following commands:
 * **`make up`:** It runs the docker containers. Alias of `docker-compose up`.
 * **`make stop`:** It stops the docker containers. Alias of `docker-compose stop`.
 * **`make superuser`:** It craetes a django super user. Alias of `docker-compose run web python manage.py createsuperuser`.
-* **`make migrate`:** It applies the django app migrations. Alias of `docker-compose run web python manage.py createsuperuser`.
+* **`make migrate`:** It applies the django app migrations. Alias of `docker-compose run web python manage.py migrate`.
+* **`make test`:** It runs the tests. Alias of `docker-compose run web python manage.py test`.
 * **`make shell`:** It runs the django app shell. Alias of `docker-compose run web python manage.py shell`.
 * **`make collectstatic`:** It collects all the static files into static folder. Alias of `docker-compose run web python manage.py collectstatic`.
 * **`make hello id=[id]`:** It executes the custom django command hello_entity which accepts one argument. Alias of `docker-compose run web python manage.py hello_entity [id]`.

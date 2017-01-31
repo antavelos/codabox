@@ -13,6 +13,9 @@ superuser:
 migrate:
 	docker-compose run web python manage.py migrate
 
+test:
+	docker-compose run web python manage.py test
+
 shell:
 	docker-compose run web python manage.py shell
 
